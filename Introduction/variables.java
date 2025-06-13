@@ -16,7 +16,7 @@ class variables{
           */
           age = 21;
           name = "Samuel Okello";
-          height = 5.6;
+          height = 5.6f;
           PI = 3.142;
           male = true;
 
@@ -29,7 +29,7 @@ class variables{
           System.out.println(" Quotient" + ( age / height ));
           System.out.println(" Remainde" + ( age % height ));
           System.out.println(" Pre-increment" + ( ++age));
-          System.out.println(age)
+          System.out.println(age);
           System.out.println(" Post-increment" + ( age++));
           System.out.println(" Pre-decrement" + ( --age));
           System.out.println(" Post-decrement" + ( age--));
