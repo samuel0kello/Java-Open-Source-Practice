@@ -1,13 +1,12 @@
 # Java Variables Cheat Sheet
 
-This document covers **all types of variables in Java**, including:
+This document includes:
 
-- **Primitive types**
-- **Reference types**
-- **Variable scopes**
+- **Types of Variables**
+- **Variable Scopes**
 - **Default values**
 - **Ranges**
-- **How to declare and initialize**
+- **How to declare and initialize variables**
 
 ---
 
@@ -35,3 +34,12 @@ This document covers **all types of variables in Java**, including:
 String name = "Alice";        // Reference to a String object
 int[] numbers = new int[5];   // Reference to an array
 MyClass obj = new MyClass();  // Reference to a custom class
+
+## Variable Types by scope
+
+| Type               | Where Defined             | Lifetime                   | Default Value          | Notes                             |
+| ------------------ | ------------------------- | -------------------------- | ---------------------- | --------------------------------- |
+| **Local**          | Inside method or block    | Until method/block ends    | None (must initialize) | Cannot use without initialization |
+| **Instance**       | Non-static field in class | As long as object exists   | Based on type          | Part of the object                |
+| **Class (Static)** | `static` field in class   | As long as class is loaded | Based on type          | Shared across all instances       |
+
