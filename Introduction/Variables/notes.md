@@ -43,3 +43,13 @@ MyClass obj = new MyClass();  // Reference to a custom class
 | **Instance**       | Non-static field in class | As long as object exists   | Based on type          | Part of the object                |
 | **Class (Static)** | `static` field in class   | As long as class is loaded | Based on type          | Shared across all instances       |
 
+```
+public class Example {
+    int instanceVar;              // Instance variable (default = 0)
+    static String staticVar;      // Class variable (default = null)
+
+    public void method() {
+        int localVar = 5;         // Local variable (must initialize)
+    }
+}
+```
