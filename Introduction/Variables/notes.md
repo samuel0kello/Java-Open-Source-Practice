@@ -30,10 +30,11 @@ This document includes:
 - Hold references to objects (e.g., `String`, arrays, custom classes).
 - **Default value**: `null`
 
-```java
+```
 String name = "Alice";        // Reference to a String object
 int[] numbers = new int[5];   // Reference to an array
 MyClass obj = new MyClass();  // Reference to a custom class
+```
 
 ## Variable Types by scope
 
