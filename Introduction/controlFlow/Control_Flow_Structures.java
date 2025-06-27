@@ -8,9 +8,9 @@ class Control_Flow_Structures{
 
          while(i <= 6){
             sum =sum++;
-            i++     //increment
+            i++;     //increment
          }
-         System.out.println(sum)
+         System.out.println(sum);
 
          /*
           * Do While Loop
@@ -18,7 +18,7 @@ class Control_Flow_Structures{
 
           do{
             sum = sum++;
-            i++
+            i++;
           }while(i <= 6);
           System.out.println(sum);
 
@@ -34,14 +34,14 @@ class Control_Flow_Structures{
         /*
          *  Switch case
          */
-         switch () {
-            case value:
+        //  switch () {
+        //     case value:
                 
-                break;
+        //         break;
          
-            default:
-                break;
-         }
+        //     default:
+        //         break;
+        //  }
 
         /*
          *  Continue Statement
@@ -49,7 +49,7 @@ class Control_Flow_Structures{
 
          for(int i = 1; i <= 100; i++){
             if((i % 2) == 0 && (i % 3) == 0 ){
-                Continue
+                Continue;
                 System.out.println(i);
             }
          }
