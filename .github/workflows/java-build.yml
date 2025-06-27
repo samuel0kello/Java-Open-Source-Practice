@@ -1,0 +1,31 @@
+name: Compile Java
+
+on:
+  pull_request:
+    branches:
+      - '**'
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Set up JDK
+        uses: actions/setup-java@v4
+        with:
+          distribution: 'temurin'
+          java-version: '17'
+
+      - name: Compile Java code
+        run: |
+          find . -name "*.java" > sources.txt
+          if [ -s sources.txt ]; then
+            javac @sources.txt
+          else
+            echo "No Java files to compile."
+          fi
+
+      # Optional: Add test steps here if you have tests
